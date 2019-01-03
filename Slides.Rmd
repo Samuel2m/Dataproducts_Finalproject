@@ -16,21 +16,21 @@ For my final project, I chose to do a quick app to display the impact of differe
 
 The dataset can be found at the [UCI repository]("https://archive.ics.uci.edu/ml/machine-learning-databases/wine-quality/"")
 
-As I needed to implement reactive expression to apply the filters dinamically, I did not feel the need to implement a predictive model as it is not the objective of the project.
+As I needed to implement reactive expressions to apply the filters dynamically, I did not feel the need to implement a predictive model as it is not the objective of the project.
 
 
 ##Requirements
 For the application to run, you'll need the following packages :
 
-* shiny : Obviously, to run the application
+* **shiny** : Obviously, to run the application
 
-* dplyr : For data manipulation
+* **dplyr** : For data manipulation
 
-* ggplot2 : used with plotly to display the plot
+* **ggplot2** : used with plotly to display the plot
 
-* plotly : just for added interactivity, I like the extra information it gives for boxplot
+* **plotly** : just for added interactivity, I like the extra information it gives for boxplot
 
-* corrplot : for the presentation only, not the slides, for variable selection
+* **corrplot** : for the presentation only, not the slides, for variable selection
 
 
 ##Variable selection
@@ -38,7 +38,7 @@ The original dataset has 11 variables + the quality, I'll be selecting the one w
 
 Here is a plot of the correlations : 
 
-```{r, echo = FALSE,fig.height= 4.5, fig.width= 4.5, fig.align="center"}
+```{r, echo = FALSE,fig.height= 4, fig.width= 4, fig.align="center"}
 #importing the data
 dataWine <- read.csv("https://archive.ics.uci.edu/ml/machine-learning-databases/wine-quality/winequality-red.csv", sep = ";") 
 #plotting the correlations
